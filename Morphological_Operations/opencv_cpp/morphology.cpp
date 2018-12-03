@@ -31,7 +31,7 @@ int main(int argc, const char** argv)
   morphologyEx(image,dst,MORPH_TOPHAT,element);
   imwrite("morph_tophat.jpg",dst);
   //diff b/w closing and input image
-	morphologyEx(image,dst,MORPH_BLACKHAT,element);
+  morphologyEx(image,dst,MORPH_BLACKHAT,element);
   imwrite("morph_blackhat.jpg",dst);
   morphologyEx(image,dst,MORPH_HITMISS,element);
   imwrite("morph_hitmiss.jpg",dst);
